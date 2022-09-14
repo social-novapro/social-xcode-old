@@ -13,6 +13,10 @@
 		65F670CF28D0F37100149AC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F670CE28D0F37100149AC5 /* ContentView.swift */; };
 		65F670D128D0F37200149AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F670D028D0F37200149AC5 /* Assets.xcassets */; };
 		65F670D528D0F37200149AC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F670D428D0F37200149AC5 /* Preview Assets.xcassets */; };
+		65F670DD28D0F43300149AC5 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F670DC28D0F43300149AC5 /* LoginPage.swift */; };
+		65F670E028D0F5E400149AC5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F670DF28D0F5E400149AC5 /* UserData.swift */; };
+		65F670E228D0F88300149AC5 /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F670E128D0F88300149AC5 /* UserLoginRequest.swift */; };
+		65F670E528D0F91900149AC5 /* userLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F670E428D0F91900149AC5 /* userLoginRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		65F670D028D0F37200149AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65F670D228D0F37200149AC5 /* interact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = interact.entitlements; sourceTree = "<group>"; };
 		65F670D428D0F37200149AC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65F670DC28D0F43300149AC5 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		65F670DF28D0F5E400149AC5 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		65F670E128D0F88300149AC5 /* UserLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
+		65F670E428D0F91900149AC5 /* userLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLoginRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		65F670C628D0F37100149AC5 /* interact */ = {
 			isa = PBXGroup;
 			children = (
+				65F670E328D0F8F400149AC5 /* Requests */,
+				65F670DE28D0F5D900149AC5 /* Structs */,
+				65F670DB28D0F42300149AC5 /* Login */,
 				65F670C728D0F37100149AC5 /* interactApp.swift */,
 				65F670C928D0F37100149AC5 /* Persistence.swift */,
 				65F670CE28D0F37100149AC5 /* ContentView.swift */,
@@ -73,6 +84,31 @@
 				65F670D428D0F37200149AC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65F670DB28D0F42300149AC5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				65F670DC28D0F43300149AC5 /* LoginPage.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		65F670DE28D0F5D900149AC5 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				65F670DF28D0F5E400149AC5 /* UserData.swift */,
+				65F670E128D0F88300149AC5 /* UserLoginRequest.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		65F670E328D0F8F400149AC5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				65F670E428D0F91900149AC5 /* userLoginRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F670E028D0F5E400149AC5 /* UserData.swift in Sources */,
 				65F670C828D0F37100149AC5 /* interactApp.swift in Sources */,
+				65F670E528D0F91900149AC5 /* userLoginRequest.swift in Sources */,
 				65F670CD28D0F37100149AC5 /* interact.xcdatamodeld in Sources */,
 				65F670CF28D0F37100149AC5 /* ContentView.swift in Sources */,
+				65F670DD28D0F43300149AC5 /* LoginPage.swift in Sources */,
 				65F670CA28D0F37100149AC5 /* Persistence.swift in Sources */,
+				65F670E228D0F88300149AC5 /* UserLoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
